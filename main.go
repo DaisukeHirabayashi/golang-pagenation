@@ -1,11 +1,15 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"log"
+
+	"github.com/DaisukeHirabayashi/golang-pagenation/db"
+	"github.com/DaisukeHirabayashi/golang-pagenation/server"
+)
 
 func main() {
-	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-		c.String(200, "Hello, World")
-	})
-	r.Run()
+	log.Print("Build starts...")
+	db.Init()
+	server.Init()
+	db.Close()
 }
