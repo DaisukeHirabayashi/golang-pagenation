@@ -30,4 +30,3 @@ pagenation and sort
 ```
 http://localhost:8080/shops?size=2&&page=1&&direction=asc&&orderby=name
 ```
-
