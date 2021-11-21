@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    container_name: go-pagenation-postgres
+    image: 'postgres:11-alpine'
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+      POSTGRES_ROOT_PASSWORD: password
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    volumes:
+      - ./postgres/initdb:/docker-entrypoint-initdb.d
