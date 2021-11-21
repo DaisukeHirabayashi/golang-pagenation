@@ -5,7 +5,6 @@ go 1.17
 require (
 	github.com/gin-gonic/gin v1.7.4
 	github.com/jinzhu/gorm v1.9.16
-	gorm.io/gorm v1.22.3
 )
 
 require (
