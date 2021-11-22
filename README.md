@@ -36,8 +36,8 @@ SampleResponse
 ```
 {
   "page": {
-    "number": 2, # pageNumber
-    "size": 2, #ncontents size
+    "number": 2, # page number
+    "size": 2, #contents size
     "total_elements": 7, # total size
     "total_pages": 4 # total pages
   },
