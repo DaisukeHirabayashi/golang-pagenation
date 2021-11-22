@@ -1,4 +1,4 @@
-\c go-pagenation;
+\c go-pagination;
 
 CREATE TABLE IF NOT EXISTS shops (
     id SERIAL NOT NULL,

@@ -5,9 +5,9 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-type Pagenation struct{}
+type Pagination struct{}
 
-func (pagenation Pagenation) Pagination(page dto.Page) func(db *gorm.DB) *gorm.DB {
+func (pagination Pagination) Pagination(page dto.Page) func(db *gorm.DB) *gorm.DB {
 	return func(db *gorm.DB) *gorm.DB {
 		offset := (page.Number - 1) * page.Size
 		return db.Offset(offset).Limit(page.Size)

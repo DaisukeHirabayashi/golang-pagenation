@@ -1,4 +1,4 @@
-# golang-pagenation
+# golang-pagination
 repository for Qitta article
 Qitta Url:
 
@@ -22,12 +22,12 @@ $ go run main.go
 ```
 
 ## sample url
-pagenation only
+pagination only
 ```
 http://localhost:8080/shops?size=2&&page=1
 ```
 
-pagenation and sort
+pagination and sort
 ```
 http://localhost:8080/shops?size=2&&page=1&&direction=asc&&orderby=name
 ```

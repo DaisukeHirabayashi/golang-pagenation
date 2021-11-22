@@ -1,1 +1,1 @@
-CREATE DATABASE "go-pagenation" encoding "UTF8";
+CREATE DATABASE "go-pagination" encoding "UTF8";
