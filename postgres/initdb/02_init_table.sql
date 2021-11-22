@@ -8,9 +8,9 @@ CREATE TABLE IF NOT EXISTS shops (
 );
 
 INSERT INTO "public"."shops" ("name") VALUES ('Pretty');
+INSERT INTO "public"."shops" ("name") VALUES ('Aeauty-Beauty');
 INSERT INTO "public"."shops" ("name") VALUES ('Beauty-Beauty');
-INSERT INTO "public"."shops" ("name") VALUES ('Beauty-Beauty');
-INSERT INTO "public"."shops" ("name") VALUES ('Beauty-Beauty');
-INSERT INTO "public"."shops" ("name") VALUES ('Beauty-Beauty');
-INSERT INTO "public"."shops" ("name") VALUES ('Beauty-Beauty');
-INSERT INTO "public"."shops" ("name") VALUES ('Beauty-Beauty');
+INSERT INTO "public"."shops" ("name") VALUES ('Ceauty-Beauty');
+INSERT INTO "public"."shops" ("name") VALUES ('Deauty-Beauty');
+INSERT INTO "public"."shops" ("name") VALUES ('Eeauty-Beauty');
+INSERT INTO "public"."shops" ("name") VALUES ('Feauty-Beauty');
