@@ -14,7 +14,7 @@ type ShopService struct{}
 var query_pagenation query.Pagenation
 var query_sort query.Sort
 
-func (shopService ShopService) GetShops(context *gin.Context) ([]entity.Shop, error) {
+func (shopService ShopService) GetShops(context *gin.Context) (dto.ShopDto, error) {
 	db := db.GetDB()
 	var shops []entity.Shop
 
@@ -22,7 +22,8 @@ func (shopService ShopService) GetShops(context *gin.Context) ([]entity.Shop, er
 	var page dto.Page = mapper.ConvertContextAndTotalElementsToPage(context, int(totalElements))
 
 	if err := db.Scopes(query_pagenation.Pagination(page)).Scopes(query_sort.Sort(context)).Find(&shops).Error; err != nil {
-		return shops, err
+		return dto.ShopDto{}, err
 	}
-	return shops, nil
+
+	return dto.ShopDto{Page: page, Shops: shops}, nil
 }
