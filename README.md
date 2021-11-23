@@ -15,12 +15,6 @@ gorm version 1.9.16
 $ docker-compose up
 ```
 
-#### go set up
-```
-$ go mod tidy
-$ go run main.go
-```
-
 ## sample url
 pagination only
 ```
